@@ -1,0 +1,186 @@
+body {
+background: #0f0f0f;
+color: white;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+.container {
+padding: 20px;
+text-align: center;
+}
+
+h1 {
+margin-bottom: 20px;
+}
+
+.week {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.day {
+background: #1e1e1e;
+color: white;
+border: none;
+padding: 18px;
+font-size: 18px;
+border-radius: 12px;
+cursor: pointer;
+transition: 0.2s;
+}
+
+.day:hover {
+background: #333;
+}
+
+@media (min-width: 600px) {
+.week {
+max-width: 400px;
+margin: auto;
+}
+}
+
+.hidden {
+display: none;
+}
+
+.back {
+background: none;
+border: none;
+color: white;
+font-size: 18px;
+margin-bottom: 10px;
+cursor: pointer;
+}
+
+.addBtn {
+background: #ff3c00;
+border: none;
+color: white;
+padding: 15px;
+border-radius: 10px;
+font-size: 16px;
+margin-bottom: 20px;
+cursor: pointer;
+}
+
+#exerciseList {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.exercise {
+background: #1e1e1e;
+padding: 10px;
+border-radius: 12px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.exercise img {
+width: 60px;
+height: 60px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+.exercise button {
+margin-left: auto;
+background: #ff3c00;
+border: none;
+color: white;
+padding: 8px 12px;
+border-radius: 8px;
+cursor: pointer;
+}
+
+.selected {
+background: #292929;
+padding: 10px;
+border-radius: 12px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.selected img {
+width: 100px;
+height: 100px;
+}
+
+.controls {
+margin-left: auto;
+display: flex;
+gap: 5px;
+}
+
+.controls button {
+background: #333;
+border: none;
+color: white;
+padding: 6px 8px;
+border-radius: 6px;
+cursor: pointer;
+}
+
+.controls button:hover {
+background: #ff3c00;
+}
+
+.selected {
+background: #292929;
+padding: 10px;
+border-radius: 12px;
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+
+input, select {
+width: 100%;
+padding: 12px;
+margin-bottom: 10px;
+background: #1e1e1e;
+border: none;
+color: white;
+border-radius: 10px;
+}
+
+small {
+color: #aaa;
+font-size: 12px;
+}
+
+.exerciseInfo {
+flex: 1;
+}
+
+.inputs {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 5px;
+margin-top: 5px;
+}
+
+.inputs input {
+width: 100%;
+padding: 6px;
+background: #1e1e1e;
+border: none;
+color: white;
+border-radius: 6px;
+}
+
+.inputs label {
+font-size: 10px;
+color: #aaa;
+}
+
+
+
