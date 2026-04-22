@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     
+
+<!-- Home Screen -->
+<div class="container" id="home">
+   
+
+<h1>🏋️ My Gym Planner</h1>
+
+<div class="week">
+
+<button class="day" onclick="openDay('Monday')">Monday</button>
+<button class="day" onclick="openDay('Tuesday')">Tuesday</button>
+<button class="day" onclick="openDay('Wednesday')">Wednesday</button>
+<button class="day" onclick="openDay('Thursday')">Thursday</button>
+<button class="day" onclick="openDay('Friday')">Friday</button>
+<button class="day" onclick="openDay('Saturday')">Saturday</button>
+<button class="day" onclick="openDay('Sunday')">Sunday</button>
+
+</div>
+
+</div>
+
+
+<!-- Day Screen -->
+<div class="container hidden" id="dayScreen">
+
+<button class="back" onclick="goBack()">← Back</button>
+
+<h2 id="dayTitle">Monday</h2>
+
+<button class="addBtn">Exercise</button>
+
+<input 
+type="text" 
+id="search" 
+placeholder="Search exercise..."
+onkeyup="showExercises()"
+>
+
+<select id="category" onchange="showExercises()">
+<option value="All">All</option>
+<option value="Chest">Chest</option>
+<option value="Legs">Legs</option>
+<option value="Arms">Arms</option>
+<option value="Shoulders">Shoulders</option>
+<option value="Core">Core</option>
+<option value="Back">Back</option>
+</select>
+
+<div id="exerciseList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
